@@ -1,0 +1,235 @@
+{
+  explainVersion: '1',
+  queryPlanner: {
+    namespace: 'Actors.Voice-actors',
+    parsedQuery: {
+      '$and': [
+        {
+          Personajes: {
+            '$elemMatch': {
+              '$and': [
+                {
+                  Generos: {
+                    '$eq': 'Accion'
+                  }
+                },
+                {
+                  Rol: {
+                    '$eq': 'principal'
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          Edad: {
+            '$lt': 30
+          }
+        }
+      ]
+    },
+    indexFilterSet: false,
+    queryHash: 'AB17841A',
+    planCacheShapeHash: 'AB17841A',
+    planCacheKey: 'E9AC4132',
+    optimizationTimeMillis: 4,
+    maxIndexedOrSolutionsReached: false,
+    maxIndexedAndSolutionsReached: false,
+    maxScansToExplodeReached: false,
+    prunedSimilarIndexes: false,
+    winningPlan: {
+      isCached: false,
+      stage: 'PROJECTION_SIMPLE',
+      transformBy: {
+        Nombre: 1,
+        Edad: 1,
+        Nacionalidad: 1,
+        _id: 0
+      },
+      inputStage: {
+        stage: 'SORT',
+        sortPattern: {
+          Edad: 1
+        },
+        memLimit: 104857600,
+        limitAmount: 10,
+        type: 'simple',
+        inputStage: {
+          stage: 'COLLSCAN',
+          filter: {
+            '$and': [
+              {
+                Personajes: {
+                  '$elemMatch': {
+                    '$and': [
+                      {
+                        Generos: {
+                          '$eq': 'Accion'
+                        }
+                      },
+                      {
+                        Rol: {
+                          '$eq': 'principal'
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                Edad: {
+                  '$lt': 30
+                }
+              }
+            ]
+          },
+          direction: 'forward'
+        }
+      }
+    },
+    rejectedPlans: []
+  },
+  executionStats: {
+    executionSuccess: true,
+    nReturned: 3,
+    executionTimeMillis: 5,
+    totalKeysExamined: 0,
+    totalDocsExamined: 20,
+    executionStages: {
+      isCached: false,
+      stage: 'PROJECTION_SIMPLE',
+      nReturned: 3,
+      executionTimeMillisEstimate: 0,
+      works: 25,
+      advanced: 3,
+      needTime: 21,
+      needYield: 0,
+      saveState: 0,
+      restoreState: 0,
+      isEOF: 1,
+      transformBy: {
+        Nombre: 1,
+        Edad: 1,
+        Nacionalidad: 1,
+        _id: 0
+      },
+      inputStage: {
+        stage: 'SORT',
+        nReturned: 3,
+        executionTimeMillisEstimate: 0,
+        works: 25,
+        advanced: 3,
+        needTime: 21,
+        needYield: 0,
+        saveState: 0,
+        restoreState: 0,
+        isEOF: 1,
+        sortPattern: {
+          Edad: 1
+        },
+        memLimit: 104857600,
+        limitAmount: 10,
+        type: 'simple',
+        totalDataSizeSorted: 1313,
+        usedDisk: false,
+        spills: 0,
+        spilledDataStorageSize: 0,
+        inputStage: {
+          stage: 'COLLSCAN',
+          filter: {
+            '$and': [
+              {
+                Personajes: {
+                  '$elemMatch': {
+                    '$and': [
+                      {
+                        Generos: {
+                          '$eq': 'Accion'
+                        }
+                      },
+                      {
+                        Rol: {
+                          '$eq': 'principal'
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                Edad: {
+                  '$lt': 30
+                }
+              }
+            ]
+          },
+          nReturned: 3,
+          executionTimeMillisEstimate: 0,
+          works: 21,
+          advanced: 3,
+          needTime: 17,
+          needYield: 0,
+          saveState: 0,
+          restoreState: 0,
+          isEOF: 1,
+          direction: 'forward',
+          docsExamined: 20
+        }
+      }
+    }
+  },
+  queryShapeHash: '6D87D91DC66B2FCB4357619B1CEB47B999A27D9F64C937C1037BD81FAA9B5797',
+  command: {
+    find: 'Voice-actors',
+    filter: {
+      Edad: {
+        '$lt': 30
+      },
+      Personajes: {
+        '$elemMatch': {
+          Rol: 'principal',
+          Generos: 'Accion'
+        }
+      }
+    },
+    sort: {
+      Edad: 1
+    },
+    projection: {
+      Nombre: 1,
+      Edad: 1,
+      Nacionalidad: 1,
+      _id: 0
+    },
+    limit: 10,
+    '$db': 'Actors'
+  },
+  serverInfo: {
+    host: '54249c6cb04c',
+    port: 30002,
+    version: '8.0.29',
+    gitVersion: '559d67c651f7393e62757234a0b25cb7a8622148'
+  },
+  serverParameters: {
+    internalQueryFacetBufferSizeBytes: 104857600,
+    internalQueryFacetMaxOutputDocSizeBytes: 104857600,
+    internalLookupStageIntermediateDocumentMaxSizeBytes: 104857600,
+    internalDocumentSourceGroupMaxMemoryBytes: 104857600,
+    internalQueryMaxBlockingSortMemoryUsageBytes: 104857600,
+    internalQueryProhibitBlockingMergeOnMongoS: 0,
+    internalQueryMaxAddToSetBytes: 104857600,
+    internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600,
+    internalQueryFrameworkControl: 'trySbeRestricted',
+    internalQueryPlannerIgnoreIndexWithCollationForRegex: 1
+  },
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1789136387, i: 1 }),
+    signature: {
+      hash: Binary.createFromBase64('AAAAAAAAAAAAAAAAAAAAAAAAAAA=', 0),
+      keyId: Long('0')
+    }
+  },
+  operationTime: Timestamp({ t: 1789136387, i: 1 })
+}

@@ -1,0 +1,189 @@
+{
+  explainVersion: '1',
+  queryPlanner: {
+    namespace: 'Actors.Voice-actors',
+    parsedQuery: {
+      '$and': [
+        {
+          Idiomas: {
+            '$eq': 'Ingles'
+          }
+        },
+        {
+          Nacionalidad: {
+            '$eq': 'Chile'
+          }
+        }
+      ]
+    },
+    indexFilterSet: false,
+    queryHash: 'F3BD70B4',
+    planCacheShapeHash: 'F3BD70B4',
+    planCacheKey: 'BB3E0D7C',
+    optimizationTimeMillis: 3,
+    maxIndexedOrSolutionsReached: false,
+    maxIndexedAndSolutionsReached: false,
+    maxScansToExplodeReached: false,
+    prunedSimilarIndexes: false,
+    winningPlan: {
+      isCached: false,
+      stage: 'PROJECTION_SIMPLE',
+      transformBy: {
+        Nombre: 1,
+        Nacionalidad: 1,
+        Idiomas: 1,
+        _id: 0
+      },
+      inputStage: {
+        stage: 'SORT',
+        sortPattern: {
+          Nombre: 1
+        },
+        memLimit: 104857600,
+        limitAmount: 10,
+        type: 'simple',
+        inputStage: {
+          stage: 'COLLSCAN',
+          filter: {
+            '$and': [
+              {
+                Idiomas: {
+                  '$eq': 'Ingles'
+                }
+              },
+              {
+                Nacionalidad: {
+                  '$eq': 'Chile'
+                }
+              }
+            ]
+          },
+          direction: 'forward'
+        }
+      }
+    },
+    rejectedPlans: []
+  },
+  executionStats: {
+    executionSuccess: true,
+    nReturned: 2,
+    executionTimeMillis: 4,
+    totalKeysExamined: 0,
+    totalDocsExamined: 20,
+    executionStages: {
+      isCached: false,
+      stage: 'PROJECTION_SIMPLE',
+      nReturned: 2,
+      executionTimeMillisEstimate: 0,
+      works: 24,
+      advanced: 2,
+      needTime: 21,
+      needYield: 0,
+      saveState: 0,
+      restoreState: 0,
+      isEOF: 1,
+      transformBy: {
+        Nombre: 1,
+        Nacionalidad: 1,
+        Idiomas: 1,
+        _id: 0
+      },
+      inputStage: {
+        stage: 'SORT',
+        nReturned: 2,
+        executionTimeMillisEstimate: 0,
+        works: 24,
+        advanced: 2,
+        needTime: 21,
+        needYield: 0,
+        saveState: 0,
+        restoreState: 0,
+        isEOF: 1,
+        sortPattern: {
+          Nombre: 1
+        },
+        memLimit: 104857600,
+        limitAmount: 10,
+        type: 'simple',
+        totalDataSizeSorted: 953,
+        usedDisk: false,
+        spills: 0,
+        spilledDataStorageSize: 0,
+        inputStage: {
+          stage: 'COLLSCAN',
+          filter: {
+            '$and': [
+              {
+                Idiomas: {
+                  '$eq': 'Ingles'
+                }
+              },
+              {
+                Nacionalidad: {
+                  '$eq': 'Chile'
+                }
+              }
+            ]
+          },
+          nReturned: 2,
+          executionTimeMillisEstimate: 0,
+          works: 21,
+          advanced: 2,
+          needTime: 18,
+          needYield: 0,
+          saveState: 0,
+          restoreState: 0,
+          isEOF: 1,
+          direction: 'forward',
+          docsExamined: 20
+        }
+      }
+    }
+  },
+  queryShapeHash: 'A9D697099392FD962D4B9E20217267CEEFE6CF572A1F31854DC73D7A7E6617DF',
+  command: {
+    find: 'Voice-actors',
+    filter: {
+      Nacionalidad: 'Chile',
+      Idiomas: 'Ingles'
+    },
+    sort: {
+      Nombre: 1
+    },
+    projection: {
+      Nombre: 1,
+      Nacionalidad: 1,
+      Idiomas: 1,
+      _id: 0
+    },
+    limit: 10,
+    '$db': 'Actors'
+  },
+  serverInfo: {
+    host: '54249c6cb04c',
+    port: 30002,
+    version: '8.0.29',
+    gitVersion: '559d67c651f7393e62757234a0b25cb7a8622148'
+  },
+  serverParameters: {
+    internalQueryFacetBufferSizeBytes: 104857600,
+    internalQueryFacetMaxOutputDocSizeBytes: 104857600,
+    internalLookupStageIntermediateDocumentMaxSizeBytes: 104857600,
+    internalDocumentSourceGroupMaxMemoryBytes: 104857600,
+    internalQueryMaxBlockingSortMemoryUsageBytes: 104857600,
+    internalQueryProhibitBlockingMergeOnMongoS: 0,
+    internalQueryMaxAddToSetBytes: 104857600,
+    internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600,
+    internalQueryFrameworkControl: 'trySbeRestricted',
+    internalQueryPlannerIgnoreIndexWithCollationForRegex: 1
+  },
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1789136347, i: 1 }),
+    signature: {
+      hash: Binary.createFromBase64('AAAAAAAAAAAAAAAAAAAAAAAAAAA=', 0),
+      keyId: Long('0')
+    }
+  },
+  operationTime: Timestamp({ t: 1789136347, i: 1 })
+}

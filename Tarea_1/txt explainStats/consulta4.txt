@@ -1,0 +1,174 @@
+{
+  explainVersion: '1',
+  queryPlanner: {
+    namespace: 'Actors.Voice-actors',
+    parsedQuery: {},
+    indexFilterSet: false,
+    queryHash: '8ED79F6E',
+    planCacheShapeHash: '8ED79F6E',
+    planCacheKey: '4334326E',
+    optimizationTimeMillis: 4,
+    optimizedPipeline: true,
+    maxIndexedOrSolutionsReached: false,
+    maxIndexedAndSolutionsReached: false,
+    maxScansToExplodeReached: false,
+    prunedSimilarIndexes: false,
+    winningPlan: {
+      isCached: false,
+      stage: 'PROJECTION_SIMPLE',
+      transformBy: {
+        Nombre: true,
+        Patrimonio: true,
+        Edad: true,
+        _id: false
+      },
+      inputStage: {
+        stage: 'SKIP',
+        skipAmount: 4,
+        inputStage: {
+          stage: 'SORT',
+          sortPattern: {
+            Patrimonio: -1
+          },
+          memLimit: 104857600,
+          limitAmount: 14,
+          type: 'simple',
+          inputStage: {
+            stage: 'COLLSCAN',
+            direction: 'forward'
+          }
+        }
+      }
+    },
+    rejectedPlans: []
+  },
+  executionStats: {
+    executionSuccess: true,
+    nReturned: 10,
+    executionTimeMillis: 10,
+    totalKeysExamined: 0,
+    totalDocsExamined: 20,
+    executionStages: {
+      isCached: false,
+      stage: 'PROJECTION_SIMPLE',
+      nReturned: 10,
+      executionTimeMillisEstimate: 10,
+      works: 36,
+      advanced: 10,
+      needTime: 25,
+      needYield: 0,
+      saveState: 0,
+      restoreState: 0,
+      isEOF: 1,
+      transformBy: {
+        Nombre: true,
+        Patrimonio: true,
+        Edad: true,
+        _id: false
+      },
+      inputStage: {
+        stage: 'SKIP',
+        nReturned: 10,
+        executionTimeMillisEstimate: 10,
+        works: 36,
+        advanced: 10,
+        needTime: 25,
+        needYield: 0,
+        saveState: 0,
+        restoreState: 0,
+        isEOF: 1,
+        skipAmount: 4,
+        inputStage: {
+          stage: 'SORT',
+          nReturned: 14,
+          executionTimeMillisEstimate: 10,
+          works: 36,
+          advanced: 14,
+          needTime: 21,
+          needYield: 0,
+          saveState: 0,
+          restoreState: 0,
+          isEOF: 1,
+          sortPattern: {
+            Patrimonio: -1
+          },
+          memLimit: 104857600,
+          limitAmount: 14,
+          type: 'simple',
+          totalDataSizeSorted: 5997,
+          usedDisk: false,
+          spills: 0,
+          spilledDataStorageSize: 0,
+          inputStage: {
+            stage: 'COLLSCAN',
+            nReturned: 20,
+            executionTimeMillisEstimate: 10,
+            works: 21,
+            advanced: 20,
+            needTime: 0,
+            needYield: 0,
+            saveState: 0,
+            restoreState: 0,
+            isEOF: 1,
+            direction: 'forward',
+            docsExamined: 20
+          }
+        }
+      }
+    }
+  },
+  queryShapeHash: 'D5A58800FB2BF5D4088BECFA8FFCBFE56036945DE9E0EA8EC3F12B76777AEDC3',
+  command: {
+    aggregate: 'Voice-actors',
+    pipeline: [
+      {
+        '$sort': {
+          Patrimonio: -1
+        }
+      },
+      {
+        '$skip': 4
+      },
+      {
+        '$limit': 10
+      },
+      {
+        '$project': {
+          Nombre: 1,
+          Patrimonio: 1,
+          Edad: 1,
+          _id: 0
+        }
+      }
+    ],
+    cursor: {},
+    '$db': 'Actors'
+  },
+  serverInfo: {
+    host: '54249c6cb04c',
+    port: 30002,
+    version: '8.0.29',
+    gitVersion: '559d67c651f7393e62757234a0b25cb7a8622148'
+  },
+  serverParameters: {
+    internalQueryFacetBufferSizeBytes: 104857600,
+    internalQueryFacetMaxOutputDocSizeBytes: 104857600,
+    internalLookupStageIntermediateDocumentMaxSizeBytes: 104857600,
+    internalDocumentSourceGroupMaxMemoryBytes: 104857600,
+    internalQueryMaxBlockingSortMemoryUsageBytes: 104857600,
+    internalQueryProhibitBlockingMergeOnMongoS: 0,
+    internalQueryMaxAddToSetBytes: 104857600,
+    internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600,
+    internalQueryFrameworkControl: 'trySbeRestricted',
+    internalQueryPlannerIgnoreIndexWithCollationForRegex: 1
+  },
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1789136417, i: 1 }),
+    signature: {
+      hash: Binary.createFromBase64('AAAAAAAAAAAAAAAAAAAAAAAAAAA=', 0),
+      keyId: Long('0')
+    }
+  },
+  operationTime: Timestamp({ t: 1789136417, i: 1 })
+}
