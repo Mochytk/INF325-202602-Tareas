@@ -1,0 +1,193 @@
+{
+  explainVersion: '1',
+  queryPlanner: {
+    namespace: 'Actors.Voice-actors',
+    parsedQuery: {
+      Edad: {
+        '$gt': 50
+      }
+    },
+    indexFilterSet: false,
+    queryHash: '61683AAC',
+    planCacheShapeHash: '61683AAC',
+    planCacheKey: 'C36F0CA9',
+    optimizationTimeMillis: 2,
+    maxIndexedOrSolutionsReached: false,
+    maxIndexedAndSolutionsReached: false,
+    maxScansToExplodeReached: false,
+    prunedSimilarIndexes: false,
+    winningPlan: {
+      isCached: false,
+      stage: 'LIMIT',
+      limitAmount: 10,
+      inputStage: {
+        stage: 'PROJECTION_SIMPLE',
+        transformBy: {
+          Nombre: 1,
+          Edad: 1,
+          Nacionalidad: 1,
+          _id: 0
+        },
+        inputStage: {
+          stage: 'FETCH',
+          inputStage: {
+            stage: 'IXSCAN',
+            keyPattern: {
+              Edad: 1
+            },
+            indexName: 'Edad_1',
+            isMultiKey: false,
+            multiKeyPaths: {
+              Edad: []
+            },
+            isUnique: false,
+            isSparse: false,
+            isPartial: false,
+            indexVersion: 2,
+            direction: 'backward',
+            indexBounds: {
+              Edad: [
+                '[inf.0, 50)'
+              ]
+            }
+          }
+        }
+      }
+    },
+    rejectedPlans: []
+  },
+  executionStats: {
+    executionSuccess: true,
+    nReturned: 6,
+    executionTimeMillis: 5,
+    totalKeysExamined: 6,
+    totalDocsExamined: 6,
+    executionStages: {
+      isCached: false,
+      stage: 'LIMIT',
+      nReturned: 6,
+      executionTimeMillisEstimate: 0,
+      works: 7,
+      advanced: 6,
+      needTime: 0,
+      needYield: 0,
+      saveState: 0,
+      restoreState: 0,
+      isEOF: 1,
+      limitAmount: 10,
+      inputStage: {
+        stage: 'PROJECTION_SIMPLE',
+        nReturned: 6,
+        executionTimeMillisEstimate: 0,
+        works: 7,
+        advanced: 6,
+        needTime: 0,
+        needYield: 0,
+        saveState: 0,
+        restoreState: 0,
+        isEOF: 1,
+        transformBy: {
+          Nombre: 1,
+          Edad: 1,
+          Nacionalidad: 1,
+          _id: 0
+        },
+        inputStage: {
+          stage: 'FETCH',
+          nReturned: 6,
+          executionTimeMillisEstimate: 0,
+          works: 7,
+          advanced: 6,
+          needTime: 0,
+          needYield: 0,
+          saveState: 0,
+          restoreState: 0,
+          isEOF: 1,
+          docsExamined: 6,
+          alreadyHasObj: 0,
+          inputStage: {
+            stage: 'IXSCAN',
+            nReturned: 6,
+            executionTimeMillisEstimate: 0,
+            works: 7,
+            advanced: 6,
+            needTime: 0,
+            needYield: 0,
+            saveState: 0,
+            restoreState: 0,
+            isEOF: 1,
+            keyPattern: {
+              Edad: 1
+            },
+            indexName: 'Edad_1',
+            isMultiKey: false,
+            multiKeyPaths: {
+              Edad: []
+            },
+            isUnique: false,
+            isSparse: false,
+            isPartial: false,
+            indexVersion: 2,
+            direction: 'backward',
+            indexBounds: {
+              Edad: [
+                '[inf.0, 50)'
+              ]
+            },
+            keysExamined: 6,
+            seeks: 1,
+            dupsTested: 0,
+            dupsDropped: 0
+          }
+        }
+      }
+    }
+  },
+  queryShapeHash: '4FD41919EFB64400AAF37D345B9269B3741D2A21434EC620713B85A4430BDEE0',
+  command: {
+    find: 'Voice-actors',
+    filter: {
+      Edad: {
+        '$gt': 50
+      }
+    },
+    sort: {
+      Edad: -1
+    },
+    projection: {
+      Nombre: 1,
+      Edad: 1,
+      Nacionalidad: 1,
+      _id: 0
+    },
+    limit: 10,
+    '$db': 'Actors'
+  },
+  serverInfo: {
+    host: '54249c6cb04c',
+    port: 30002,
+    version: '8.0.29',
+    gitVersion: '559d67c651f7393e62757234a0b25cb7a8622148'
+  },
+  serverParameters: {
+    internalQueryFacetBufferSizeBytes: 104857600,
+    internalQueryFacetMaxOutputDocSizeBytes: 104857600,
+    internalLookupStageIntermediateDocumentMaxSizeBytes: 104857600,
+    internalDocumentSourceGroupMaxMemoryBytes: 104857600,
+    internalQueryMaxBlockingSortMemoryUsageBytes: 104857600,
+    internalQueryProhibitBlockingMergeOnMongoS: 0,
+    internalQueryMaxAddToSetBytes: 104857600,
+    internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600,
+    internalQueryFrameworkControl: 'trySbeRestricted',
+    internalQueryPlannerIgnoreIndexWithCollationForRegex: 1
+  },
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1789136857, i: 1 }),
+    signature: {
+      hash: Binary.createFromBase64('AAAAAAAAAAAAAAAAAAAAAAAAAAA=', 0),
+      keyId: Long('0')
+    }
+  },
+  operationTime: Timestamp({ t: 1789136857, i: 1 })
+}
