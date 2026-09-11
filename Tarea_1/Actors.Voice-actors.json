@@ -1,0 +1,752 @@
+[{
+  "_id": {
+    "$oid": "6aa47f64a3151b978556418d"
+  },
+  "Nombre": "John Smith",
+  "Nacionalidad": "Estados Unidos",
+  "Fecha_de_nacimiento": "1988-02-15",
+  "Edad": 36,
+  "Patrimonio": 2772000,
+  "Idiomas": [
+    "Ingles",
+    "Frances"
+  ],
+  "Personajes": [
+    {
+      "Nombre_del_personaje": "Agente X",
+      "Produccion": "Espias de Medianoche",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 3,
+      "Generos": [
+        "Accion",
+        "Thriller"
+      ]
+    },
+    {
+      "Nombre_del_personaje": "Voz Misteriosa",
+      "Produccion": "Sansa Ball Race",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 3,
+      "Generos": [
+        "Animacion",
+        "Aventura"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa47f64a3151b978556418f"
+  },
+  "Nombre": "Luis Perez",
+  "Nacionalidad": "Colombia",
+  "Fecha_de_nacimiento": "1965-04-30",
+  "Edad": 59,
+  "Patrimonio": 792000,
+  "Idiomas": [
+    "Espanol"
+  ],
+  "Personajes": [
+    {
+      "Nombre_del_personaje": "Don Pancho",
+      "Produccion": "Aventuras del Campo",
+      "Tipo_de_produccion": "independiente",
+      "Rol": "secundario",
+      "Cantidad_de_apariciones": 5,
+      "Generos": [
+        "Comedia"
+      ]
+    },
+    {
+      "Nombre_del_personaje": "Voz Misteriosa",
+      "Produccion": "Sansa Ball Race",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "secundario",
+      "Cantidad_de_apariciones": 1,
+      "Generos": [
+        "Animacion",
+        "Aventura"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa47f64a3151b978556419d"
+  },
+  "Nombre": "Chloe Tremblay",
+  "Nacionalidad": "Canada",
+  "Fecha_de_nacimiento": "1978-08-29",
+  "Edad": 45,
+  "Patrimonio": 1452000,
+  "Idiomas": [
+    "Frances",
+    "Ingles"
+  ],
+  "Personajes": [
+    {
+      "Nombre_del_personaje": "Sargento Lopez",
+      "Produccion": "Frontera Norte",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "secundario",
+      "Cantidad_de_apariciones": 22,
+      "Generos": [
+        "Accion",
+        "Policial"
+      ]
+    },
+    {
+      "Nombre_del_personaje": "Voz Misteriosa",
+      "Produccion": "Sansa Ball Race",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "secundario",
+      "Cantidad_de_apariciones": 1,
+      "Generos": [
+        "Animacion",
+        "Aventura"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa47f64a3151b9785564190"
+  },
+  "Nombre": "Maria Garcia",
+  "Nacionalidad": "Espana",
+  "Fecha_de_nacimiento": "1995-12-01",
+  "Edad": 28,
+  "Patrimonio": 541200,
+  "Idiomas": [
+    "Espanol",
+    "Catalan"
+  ],
+  "Personajes": [
+    {
+      "Nombre_del_personaje": "Inspectora Vega",
+      "Produccion": "Crimen en Madrid",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 10,
+      "Generos": [
+        "Policial",
+        "Misterio"
+      ]
+    },
+    {
+      "Nombre_del_personaje": "Voz Misteriosa",
+      "Produccion": "Sansa Ball Race",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 3,
+      "Generos": [
+        "Animacion",
+        "Aventura"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa47f64a3151b9785564199"
+  },
+  "Nombre": "Hugo Martin",
+  "Nacionalidad": "Francia",
+  "Fecha_de_nacimiento": "1968-09-03",
+  "Edad": 55,
+  "Patrimonio": 2376000,
+  "Idiomas": [
+    "Frances",
+    "Espanol"
+  ],
+  "Personajes": [
+    {
+      "Nombre_del_personaje": "Chef Pierre",
+      "Produccion": "Gourmet Extremo",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "secundario",
+      "Cantidad_de_apariciones": 20,
+      "Generos": [
+        "Realidad",
+        "Comedia"
+      ]
+    },
+    {
+      "Nombre_del_personaje": "Voz Misteriosa",
+      "Produccion": "Sansa Ball Race",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "secundario",
+      "Cantidad_de_apariciones": 1,
+      "Generos": [
+        "Animacion",
+        "Aventura"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa47f64a3151b9785564191"
+  },
+  "Nombre": "David Jones",
+  "Nacionalidad": "Reino Unido",
+  "Fecha_de_nacimiento": "1960-07-14",
+  "Edad": 64,
+  "Patrimonio": 4620000,
+  "Idiomas": [
+    "Ingles"
+  ],
+  "Personajes": [
+    {
+      "Nombre_del_personaje": "Mago Supremo",
+      "Produccion": "El Anillo Perdido",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 3,
+      "Generos": [
+        "Fantasia",
+        "Aventura"
+      ]
+    },
+    {
+      "Nombre_del_personaje": "Voz Misteriosa",
+      "Produccion": "Sansa Ball Race",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "secundario",
+      "Cantidad_de_apariciones": 1,
+      "Generos": [
+        "Animacion",
+        "Aventura"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa47f64a3151b978556419a"
+  },
+  "Nombre": "Clara Kim",
+  "Nacionalidad": "Corea del Sur",
+  "Fecha_de_nacimiento": "1998-11-20",
+  "Edad": 25,
+  "Patrimonio": 2904000,
+  "Idiomas": [
+    "Coreano",
+    "Ingles"
+  ],
+  "Personajes": [
+    {
+      "Nombre_del_personaje": "Ji-Yeon",
+      "Produccion": "Amor en Seul",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 16,
+      "Generos": [
+        "Romance",
+        "Drama"
+      ]
+    },
+    {
+      "Nombre_del_personaje": "Voz Misteriosa",
+      "Produccion": "Sansa Ball Race",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 3,
+      "Generos": [
+        "Animacion",
+        "Aventura"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa47f64a3151b978556419e"
+  },
+  "Nombre": "Mateo Silva",
+  "Nacionalidad": "Brasil",
+  "Fecha_de_nacimiento": "2003-01-10",
+  "Edad": 21,
+  "Patrimonio": 171600,
+  "Idiomas": [
+    "Portugues",
+    "Espanol"
+  ],
+  "Personajes": [
+    {
+      "Nombre_del_personaje": "Capitan Futuro",
+      "Produccion": "Galaxia 3000",
+      "Tipo_de_produccion": "independiente",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 3,
+      "Generos": [
+        "Ciencia Ficcion",
+        "Accion"
+      ]
+    },
+    {
+      "Nombre_del_personaje": "Voz Misteriosa",
+      "Produccion": "Sansa Ball Race",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 3,
+      "Generos": [
+        "Animacion",
+        "Aventura"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa47f64a3151b9785564193"
+  },
+  "Nombre": "Roberto Gomez",
+  "Nacionalidad": "Chile",
+  "Fecha_de_nacimiento": "1975-09-18",
+  "Edad": 49,
+  "Patrimonio": 950400,
+  "Idiomas": [
+    "Espanol",
+    "Ingles"
+  ],
+  "Personajes": [
+    {
+      "Nombre_del_personaje": "Comandante Silva",
+      "Produccion": "Estacion Espacial Cero",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "secundario",
+      "Cantidad_de_apariciones": 15,
+      "Generos": [
+        "Ciencia Ficcion"
+      ]
+    },
+    {
+      "Nombre_del_personaje": "Voz Misteriosa",
+      "Produccion": "Sansa Ball Race",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "secundario",
+      "Cantidad_de_apariciones": 1,
+      "Generos": [
+        "Animacion",
+        "Aventura"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa47f64a3151b9785564198"
+  },
+  "Nombre": "Elena Rostova",
+  "Nacionalidad": "Rusia",
+  "Fecha_de_nacimiento": "2000-04-17",
+  "Edad": 26,
+  "Patrimonio": 369600,
+  "Idiomas": [
+    "Ruso",
+    "Ingles"
+  ],
+  "Personajes": [
+    {
+      "Nombre_del_personaje": "Fantasma Vengativo",
+      "Produccion": "La Casona",
+      "Tipo_de_produccion": "independiente",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 1,
+      "Generos": [
+        "Terror",
+        "Misterio"
+      ]
+    },
+    {
+      "Nombre_del_personaje": "Voz Misteriosa",
+      "Produccion": "Sansa Ball Race",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 3,
+      "Generos": [
+        "Animacion",
+        "Aventura"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa47f64a3151b9785564192"
+  },
+  "Nombre": "Emma Brown",
+  "Nacionalidad": "Canada",
+  "Fecha_de_nacimiento": "1997-03-22",
+  "Edad": 27,
+  "Patrimonio": 330000,
+  "Idiomas": [
+    "Ingles",
+    "Frances"
+  ],
+  "Personajes": [
+    {
+      "Nombre_del_personaje": "Lucy",
+      "Produccion": "Risas en la Nieve",
+      "Tipo_de_produccion": "independiente",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 8,
+      "Generos": [
+        "Comedia"
+      ]
+    },
+    {
+      "Nombre_del_personaje": "Voz Misteriosa",
+      "Produccion": "Sansa Ball Race",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 3,
+      "Generos": [
+        "Animacion",
+        "Aventura"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa47f64a3151b978556418c"
+  },
+  "Nombre": "Ana Silva",
+  "Nacionalidad": "Mexico",
+  "Fecha_de_nacimiento": "1970-11-23",
+  "Edad": 53,
+  "Patrimonio": 1122000,
+  "Idiomas": [
+    "Espanol"
+  ],
+  "Personajes": [
+    {
+      "Nombre_del_personaje": "Reina Madre",
+      "Produccion": "El Trono Roto",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "secundario",
+      "Cantidad_de_apariciones": 12,
+      "Generos": [
+        "Drama",
+        "Fantasia"
+      ]
+    },
+    {
+      "Nombre_del_personaje": "Voz Misteriosa",
+      "Produccion": "Sansa Ball Race",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "secundario",
+      "Cantidad_de_apariciones": 1,
+      "Generos": [
+        "Animacion",
+        "Aventura"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa47f64a3151b9785564197"
+  },
+  "Nombre": "Omar Al-Fayed",
+  "Nacionalidad": "Egipto",
+  "Fecha_de_nacimiento": "1985-12-30",
+  "Edad": 40,
+  "Patrimonio": 594000,
+  "Idiomas": [
+    "Arabe",
+    "Ingles"
+  ],
+  "Personajes": [
+    {
+      "Nombre_del_personaje": "Mercader",
+      "Produccion": "Dunas de Arena",
+      "Tipo_de_produccion": "independiente",
+      "Rol": "extra",
+      "Cantidad_de_apariciones": 2,
+      "Generos": [
+        "Historico"
+      ]
+    },
+    {
+      "Nombre_del_personaje": "Voz Misteriosa",
+      "Produccion": "Sansa Ball Race",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "secundario",
+      "Cantidad_de_apariciones": 1,
+      "Generos": [
+        "Animacion",
+        "Aventura"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa47f64a3151b978556419b"
+  },
+  "Nombre": "Diego Rojas",
+  "Nacionalidad": "Argentina",
+  "Fecha_de_nacimiento": "1963-05-08",
+  "Edad": 61,
+  "Patrimonio": 1254000,
+  "Idiomas": [
+    "Espanol"
+  ],
+  "Personajes": [
+    {
+      "Nombre_del_personaje": "El Padrino",
+      "Produccion": "Calles de Buenos Aires",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "secundario",
+      "Cantidad_de_apariciones": 8,
+      "Generos": [
+        "Crimen",
+        "Drama"
+      ]
+    },
+    {
+      "Nombre_del_personaje": "Voz Misteriosa",
+      "Produccion": "Sansa Ball Race",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "secundario",
+      "Cantidad_de_apariciones": 1,
+      "Generos": [
+        "Animacion",
+        "Aventura"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa47f64a3151b9785564195"
+  },
+  "Nombre": "Lucas Muller",
+  "Nacionalidad": "Alemania",
+  "Fecha_de_nacimiento": "1971-01-28",
+  "Edad": 53,
+  "Patrimonio": 1584000,
+  "Idiomas": [
+    "Aleman",
+    "Ingles"
+  ],
+  "Personajes": [
+    {
+      "Nombre_del_personaje": "Doctor Klaus",
+      "Produccion": "Hospital Central",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "secundario",
+      "Cantidad_de_apariciones": 45,
+      "Generos": [
+        "Drama Médico"
+      ]
+    },
+    {
+      "Nombre_del_personaje": "Voz Misteriosa",
+      "Produccion": "Sansa Ball Race",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "secundario",
+      "Cantidad_de_apariciones": 1,
+      "Generos": [
+        "Animacion",
+        "Aventura"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa47f64a3151b978556418b"
+  },
+  "Nombre": "Carlos Mendoza",
+  "Nacionalidad": "Chile",
+  "Fecha_de_nacimiento": "1998-05-12",
+  "Edad": 26,
+  "Patrimonio": 198000,
+  "Idiomas": [
+    "Espanol",
+    "Ingles"
+  ],
+  "Personajes": [
+    {
+      "Nombre_del_personaje": "Guerrero Mistico",
+      "Produccion": "Leyendas de Zenda",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 50,
+      "Generos": [
+        "Accion",
+        "Aventura"
+      ]
+    },
+    {
+      "Nombre_del_personaje": "Voz Misteriosa",
+      "Produccion": "Sansa Ball Race",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 3,
+      "Generos": [
+        "Animacion",
+        "Aventura"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa47f64a3151b9785564194"
+  },
+  "Nombre": "Sofia Rossi",
+  "Nacionalidad": "Italia",
+  "Fecha_de_nacimiento": "1992-06-11",
+  "Edad": 32,
+  "Patrimonio": 765600,
+  "Idiomas": [
+    "Italiano",
+    "Ingles",
+    "Espanol"
+  ],
+  "Personajes": [
+    {
+      "Nombre_del_personaje": "Julieta",
+      "Produccion": "Romance en Roma",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 1,
+      "Generos": [
+        "Romance",
+        "Drama"
+      ]
+    },
+    {
+      "Nombre_del_personaje": "Voz Misteriosa",
+      "Produccion": "Sansa Ball Race",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 3,
+      "Generos": [
+        "Animacion",
+        "Aventura"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa47f64a3151b978556419c"
+  },
+  "Nombre": "Liam O'Connor",
+  "Nacionalidad": "Irlanda",
+  "Fecha_de_nacimiento": "1990-02-14",
+  "Edad": 34,
+  "Patrimonio": 1003200,
+  "Idiomas": [
+    "Ingles",
+    "Gaelico"
+  ],
+  "Personajes": [
+    {
+      "Nombre_del_personaje": "Duende Verde",
+      "Produccion": "Cuentos Celtas",
+      "Tipo_de_produccion": "independiente",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 5,
+      "Generos": [
+        "Fantasia",
+        "Infantil"
+      ]
+    },
+    {
+      "Nombre_del_personaje": "Voz Misteriosa",
+      "Produccion": "Sansa Ball Race",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 3,
+      "Generos": [
+        "Animacion",
+        "Aventura"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa47f64a3151b978556418e"
+  },
+  "Nombre": "Yui Tanaka",
+  "Nacionalidad": "Japon",
+  "Fecha_de_nacimiento": "2001-08-09",
+  "Edad": 23,
+  "Patrimonio": 422400,
+  "Idiomas": [
+    "Japones",
+    "Ingles"
+  ],
+  "Personajes": [
+    {
+      "Nombre_del_personaje": "Sakura",
+      "Produccion": "Magic School Anime",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 24,
+      "Generos": [
+        "Magia",
+        "Escolar"
+      ]
+    },
+    {
+      "Nombre_del_personaje": "Voz Misteriosa",
+      "Produccion": "Sansa Ball Race",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 3,
+      "Generos": [
+        "Animacion",
+        "Aventura"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6aa47f64a3151b9785564196"
+  },
+  "Nombre": "Mia Chen",
+  "Nacionalidad": "China",
+  "Fecha_de_nacimiento": "1999-10-05",
+  "Edad": 24,
+  "Patrimonio": 1188000,
+  "Idiomas": [
+    "Mandarin",
+    "Ingles"
+  ],
+  "Personajes": [
+    {
+      "Nombre_del_personaje": "Lin",
+      "Produccion": "Sombras del Dragon",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 2,
+      "Generos": [
+        "Artes Marciales",
+        "Accion"
+      ]
+    },
+    {
+      "Nombre_del_personaje": "Voz Misteriosa",
+      "Produccion": "Sansa Ball Race",
+      "Tipo_de_produccion": "profesional",
+      "Rol": "principal",
+      "Cantidad_de_apariciones": 3,
+      "Generos": [
+        "Animacion",
+        "Aventura"
+      ]
+    }
+  ]
+}]
