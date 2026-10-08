@@ -1,0 +1,5 @@
+ nombre         | nacionalidad | edad | idiomas
+----------------+--------------+------+-----------------------
+ Carlos Mendoza |        Chile |   26 | {'Espanol', 'Ingles'}
+
+(1 rows)

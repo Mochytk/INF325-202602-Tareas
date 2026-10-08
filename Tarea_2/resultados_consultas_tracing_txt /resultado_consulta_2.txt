@@ -1,0 +1,6 @@
+ nombre         | edad | nacionalidad
+----------------+------+--------------
+ Carlos Mendoza |   26 |        Chile
+  Roberto Gomez |   49 |        Chile
+
+(2 rows)

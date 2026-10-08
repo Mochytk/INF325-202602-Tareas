@@ -1,0 +1,6 @@
+ nombre         | edad | nacionalidad
+----------------+------+--------------
+     Emma Brown |   27 |       Canada
+ Chloe Tremblay |   45 |       Canada
+
+(2 rows)

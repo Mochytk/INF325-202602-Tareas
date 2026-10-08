@@ -1,0 +1,24 @@
+ nombre         | nacionalidad | edad | idiomas
+----------------+--------------+------+-----------------------
+ Carlos Mendoza |        Chile |   26 | {'Espanol', 'Ingles'}
+
+(1 rows)
+
+Tracing session: 639e3ce0-c221-11f1-8dad-03a283d7bcb2
+
+ activity                                                                                                                                                             | timestamp                  | source     | source_elapsed | client
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------+------------+----------------+-----------
+                                                                                                                                                   Execute CQL3 query | 2026-10-07 07:33:28.686000 | 172.18.0.2 |              0 | 127.0.0.1
+ Parsing SELECT nombre, nacionalidad, edad, idiomas FROM actores_por_id WHERE id_actor = a0000000-0000-0000-0000-000000000001 LIMIT 10; [Native-Transport-Requests-1] | 2026-10-07 07:33:28.774000 | 172.18.0.2 |          97418 | 127.0.0.1
+                                                                                                                    Preparing statement [Native-Transport-Requests-1] | 2026-10-07 07:33:28.787000 | 172.18.0.2 |         111077 | 127.0.0.1
+                                                                                                     Executing single-partition query on actores_por_id [ReadStage-2] | 2026-10-07 07:33:28.808000 | 172.18.0.2 |         132446 | 127.0.0.1
+                                                                                                                           Acquiring sstable references [ReadStage-2] | 2026-10-07 07:33:28.810000 | 172.18.0.2 |         133187 | 127.0.0.1
+                                                                              Skipped 0/0 non-slice-intersecting sstables, included 0 due to tombstones [ReadStage-2] | 2026-10-07 07:33:28.813000 | 172.18.0.2 |         137245 | 127.0.0.1
+                                                                                                              Merged data from memtables and 0 sstables [ReadStage-2] | 2026-10-07 07:33:28.819000 | 172.18.0.2 |         142675 | 127.0.0.1
+                                                                                                                 Read 1 live rows and 0 tombstone cells [ReadStage-2] | 2026-10-07 07:33:28.822000 | 172.18.0.2 |         145870 | 127.0.0.1
+                                           speculating read retry on Full(/172.18.0.4:7000,(-3492036659850446439,-3422263362017906590]) [Native-Transport-Requests-1] | 2026-10-07 07:33:28.823000 | 172.18.0.2 |         146843 | 127.0.0.1
+                                                              Sending READ_REQ message to cassandra2/172.18.0.4:7000 message size 185 bytes [Messaging-EventLoop-3-5] | 2026-10-07 07:33:28.829000 | 172.18.0.2 |         152921 | 127.0.0.1
+                                                                                            READ_RSP message received from /172.18.0.4:7000 [Messaging-EventLoop-3-6] | 2026-10-07 07:33:29.077000 | 172.18.0.2 |            170 | 127.0.0.1
+                                                                                                   Processing response from /172.18.0.4:7000 [RequestResponseStage-1] | 2026-10-07 07:33:29.079000 | 172.18.0.2 |           2636 | 127.0.0.1
+                                                                                                                                                     Request complete | 2026-10-07 07:33:28.842410 | 172.18.0.2 |         156410 | 127.0.0.1
+

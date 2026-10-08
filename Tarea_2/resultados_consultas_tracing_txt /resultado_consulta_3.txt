@@ -1,0 +1,5 @@
+ nombre_personaje | rol       | cantidad_de_apariciones | produccion
+------------------+-----------+-------------------------+-------------------
+ Guerrero Mistico | principal |                      50 | Leyendas de Zenda
+
+(1 rows)

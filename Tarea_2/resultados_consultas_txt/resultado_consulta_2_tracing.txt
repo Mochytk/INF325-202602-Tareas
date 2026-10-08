@@ -1,0 +1,32 @@
+ nombre         | edad | nacionalidad
+----------------+------+--------------
+ Carlos Mendoza |   26 |        Chile
+  Roberto Gomez |   49 |        Chile
+
+(2 rows)
+
+Tracing session: 85c8e180-c221-11f1-8dad-03a283d7bcb2
+
+ activity                                                                                                                                            | timestamp                  | source     | source_elapsed | client
+-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------+------------+----------------+-----------
+                                                                                                                                  Execute CQL3 query | 2026-10-07 07:34:25.948000 | 172.18.0.2 |              0 | 127.0.0.1
+ Parsing SELECT nombre, edad, nacionalidad FROM actores_por_nacionalidad_y_edad WHERE nacionalidad = 'Chile' LIMIT 10; [Native-Transport-Requests-1] | 2026-10-07 07:34:26.013000 | 172.18.0.2 |          67831 | 127.0.0.1
+                                                                                                   Preparing statement [Native-Transport-Requests-1] | 2026-10-07 07:34:26.162000 | 172.18.0.2 |         216545 | 127.0.0.1
+                                                                                    reading data from /172.18.0.4:7000 [Native-Transport-Requests-1] | 2026-10-07 07:34:26.208000 | 172.18.0.2 |         262328 | 127.0.0.1
+                            speculating read retry on Full(/172.18.0.3:7000,(-567278305204940924,-440432212133250228]) [Native-Transport-Requests-1] | 2026-10-07 07:34:26.276000 | 172.18.0.2 |         330709 | 127.0.0.1
+                                             Sending READ_REQ message to cassandra3/172.18.0.3:7000 message size 100 bytes [Messaging-EventLoop-3-2] | 2026-10-07 07:34:26.292000 | 172.18.0.2 |         346836 | 127.0.0.1
+                                             Sending READ_REQ message to cassandra2/172.18.0.4:7000 message size 100 bytes [Messaging-EventLoop-3-5] | 2026-10-07 07:34:26.296000 | 172.18.0.2 |         346782 | 127.0.0.1
+                                                                           READ_REQ message received from /172.18.0.2:7000 [Messaging-EventLoop-3-5] | 2026-10-07 07:34:26.610000 | 172.18.0.4 |          18397 | 127.0.0.1
+                                                                   Executing single-partition query on actores_por_nacionalidad_y_edad [ReadStage-2] | 2026-10-07 07:34:26.769000 | 172.18.0.4 |         179836 | 127.0.0.1
+                                                                                                          Acquiring sstable references [ReadStage-2] | 2026-10-07 07:34:26.770000 | 172.18.0.4 |         182066 | 127.0.0.1
+                                                             Skipped 0/0 non-slice-intersecting sstables, included 0 due to tombstones [ReadStage-2] | 2026-10-07 07:34:26.835000 | 172.18.0.4 |         247001 | 127.0.0.1
+                                                                                             Merged data from memtables and 0 sstables [ReadStage-2] | 2026-10-07 07:34:26.922000 | 172.18.0.4 |         333878 | 127.0.0.1
+                                                                                                Read 2 live rows and 0 tombstone cells [ReadStage-2] | 2026-10-07 07:34:26.927000 | 172.18.0.4 |         338715 | 127.0.0.1
+                                                                                                Enqueuing response to /172.18.0.2:7000 [ReadStage-2] | 2026-10-07 07:34:27.648000 | 172.18.0.4 |        1058801 | 127.0.0.1
+                                             Sending READ_RSP message to cassandra1/172.18.0.2:7000 message size 139 bytes [Messaging-EventLoop-3-2] | 2026-10-07 07:34:27.765000 | 172.18.0.4 |        1175568 | 127.0.0.1
+                                                                           READ_RSP message received from /172.18.0.4:7000 [Messaging-EventLoop-3-6] | 2026-10-07 07:34:27.844000 | 172.18.0.2 |        1898595 | 127.0.0.1
+                                                                                  Processing response from /172.18.0.4:7000 [RequestResponseStage-5] | 2026-10-07 07:34:27.845000 | 172.18.0.2 |        1900056 | 127.0.0.1
+                                                                           READ_RSP message received from /172.18.0.3:7000 [Messaging-EventLoop-3-5] | 2026-10-07 07:34:28.761000 | 172.18.0.2 |             95 | 127.0.0.1
+                                                                                  Processing response from /172.18.0.3:7000 [RequestResponseStage-1] | 2026-10-07 07:34:28.769000 | 172.18.0.2 |           8249 | 127.0.0.1
+                                                                                                                                    Request complete | 2026-10-07 07:34:27.911637 | 172.18.0.2 |        1963637 | 127.0.0.1
+
